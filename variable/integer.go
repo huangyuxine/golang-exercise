@@ -11,8 +11,15 @@ func main() {
 	num3 := 0x114
 	// 十进制
 	num4 := 999
+	// 无符号
+	var num5 uint = 100
+	// 有符号
+	var num6 int = -100
+	
 	fmt.Printf("2进制数 %b 表示的是: %d \n", num1, num1)
 	fmt.Printf("8进制数 %o 表示的是: %d \n", num2, num2)
 	fmt.Printf("16进制数 %X 表示的是: %d \n", num3, num3)
 	fmt.Println(num4)
+	fmt.Println(num5)
+	fmt.Println(num6)
 }
