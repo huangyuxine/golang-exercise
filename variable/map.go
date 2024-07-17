@@ -21,4 +21,28 @@ func main() {
 	map2["age"] = "1"
 	map2["age1"] = "1"
 
+	// 空map等于nil
+	var map3 map[string]string
+	fmt.Println(map3 == nil)
+
+	// 新增
+	map4 := map[string]int{}
+	map4["water"] = 2
+	map4["iphone"] = 5000
+	fmt.Println("map4:", map4)
+	// 删
+	delete(map4, "water")
+	fmt.Println("map4:", map4)
+	// 改
+	map4["iphone"] = 1
+	fmt.Println("map4:", map4)
+	// 查
+	fmt.Println("iphone:", map4["iphone"])
+
+	// 长度
+	fmt.Println(len(map4))
+
+	// 判断值是否存在
+	res, ok := map4["iphone"]
+	fmt.Println(res, ok)
 }
