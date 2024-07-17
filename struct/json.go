@@ -35,4 +35,12 @@ func main() {
 	}
 	res := string(marshal)
 	fmt.Println(res)
+
+	var user1 User
+	jsonstr := `{"name":"黄","age":20,"address":"earth"}`
+	err = json.Unmarshal([]byte(jsonstr), &user1)
+	if err != nil {
+		return
+	}
+	fmt.Println(user1.Name)
 }
