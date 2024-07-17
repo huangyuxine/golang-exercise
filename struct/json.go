@@ -12,9 +12,9 @@ type Result struct {
 }
 
 type User struct {
-	Name    string
-	Age     int
-	Address string
+	Name    string `json:"name"`
+	Age     int    `json:"age"`
+	Address string `json:"address"`
 }
 
 func ResultSuccess(data interface{}) *Result {
