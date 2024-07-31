@@ -1,2 +1,4 @@
 # golang-exercise
-golang练习
+- golang
+  - 基本类型
+    * [array](variable/array.go)
